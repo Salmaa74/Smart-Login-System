@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="img/Login.jpg" type="image/icon type">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="Login" class="position-fixed end-0 top-0 w-100 h-100 text-center py-5">
+        <div id="logbox" class=" w-100 m-auto container text-center py-5 shadow-lg">
+            <h1>Welcome Back!</h1>
+            <p>Continue your journey with us.</p>
+            <input type="email"id='loginemail' placeholder="Enter your email" class="form-control w-75 mx-auto my-4" onkeydown="moveToNextInput(event, 'loginpassword')">
+            <input type="password"id='loginpassword' placeholder="Enter your password" class="form-control w-75 mx-auto my-4"onkeydown="clickButtonOnEnter(event, 'logbtn')">
+            <p id="clicked"></p>
+            <button class="btn w-75 btn-outline-light" id="logbtn">Log in</button>
+            <p class="my-5">Don’t have an account? <a href="Signup/signup.html" class="">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
